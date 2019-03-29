@@ -20,7 +20,6 @@ public class Animal {
     private int statusProcura; // Status da procura pelo animal, onde: 0 - Seguro, 1 - Procurando
     private String /*Foto (substitui String) */ foto; // Foto do Animal (pensei em criarmos um tipo foto pra colocarmos lá dentro.. sla)
 
-    private Pessoa TesteCommit;
     /* Constructor */
 
     /* Methods */
