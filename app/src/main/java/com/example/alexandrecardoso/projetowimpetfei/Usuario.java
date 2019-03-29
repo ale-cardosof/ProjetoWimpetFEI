@@ -43,7 +43,7 @@ public class Usuario {
     public int testaLogin(String login, String password[]){
         /* Aqui, devemos procurar no banco se este login existe, e caso exista, verificamos se a senha está certa
         *  Se verificar corretamente, retorna o id correspondente, se não conseguir, retornar a variavel global idInvalido
-        * */
+        * *///
         return 1; // Momentanêo para ficar sem erro
     }
 
