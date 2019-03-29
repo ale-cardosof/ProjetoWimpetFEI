@@ -9,6 +9,7 @@ package com.example.alexandrecardoso.projetowimpetfei;
 
 public class Usuario {
     /* Attributes */
+    private int id;
     private String nome; // Nome do User
     private String email; // E-mail do Usuário
     private int telefone[]; // Telefone do Usuário
@@ -18,7 +19,6 @@ public class Usuario {
     private String login; // Login de Acesso a plataforma
     private String password[]; // Senha de Acesso a plataforma
     private int tipoUser; // Define os previlégios do usuário, sendo: 0 - User Comum, 1 - User Premium e 2 - Administrador
-    private int id;
     private Animal meusAnimais[]; // Chave para conexão com o banco de dados
     private double confiabilidade; // Nível de confiabilidade do usuário
     private static final int idInvalido = -1;
