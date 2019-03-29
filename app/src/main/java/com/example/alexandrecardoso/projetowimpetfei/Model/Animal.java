@@ -5,7 +5,7 @@
  * Author: Alexandre Cardoso
  */
 
-package com.example.alexandrecardoso.projetowimpetfei;
+package com.example.alexandrecardoso.projetowimpetfei.Model;
 
 public class Animal {
     /* Attributes */
