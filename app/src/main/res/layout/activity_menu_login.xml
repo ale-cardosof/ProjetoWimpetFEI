@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg2"
-    tools:context=".View.menuLogin">
+    tools:context=".menuLogin">
 
     <TextView
         android:id="@+id/tvEsqueci"
@@ -38,6 +38,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@drawable/botao"
+        android:onClick="login"
         android:text="LOGAR"
         android:textColor="@android:color/background_light"
         android:textSize="24sp"
