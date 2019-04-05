@@ -14,8 +14,13 @@ public class menuPrincipal extends AppCompatActivity {
         setContentView(R.layout.activity_menu_principal);
     }
 
-    public void abreTela(View view){
+    public void abreTelaLogin(View view){
         Intent it = new Intent(menuPrincipal.this, menuLogin.class);
+        startActivity(it);
+    }
+
+    public void abreTelaCadastroUsuario(View view){
+        Intent it = new Intent(menuPrincipal.this, menuCadastroUsuario.class);
         startActivity(it);
     }
 

@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "251577602687",
+    "firebase_url": "https://wimpet-6310e.firebaseio.com",
+    "project_id": "wimpet-6310e",
+    "storage_bucket": "wimpet-6310e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251577602687:android:6642dc9c37df77e8",
+        "android_client_info": {
+          "package_name": "com.example.alexandrecardoso.projetowimpetfei"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251577602687-c8hkucmm86d4ni1dbpklsjcd8r466a7h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.alexandrecardoso.projetowimpetfei",
+            "certificate_hash": "141a8fe79d0ec97cb2fbb4bdf8f5e804e664e354"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVan_gCmfYdLAU4zJJkzcYFn6KBd3LFrg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251577602687-l181kcak9kcqdjpk0umgc5lm3606pirj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

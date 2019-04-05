@@ -7,7 +7,7 @@
     android:background="@drawable/bg2">
 
     <Button
-        android:id="@+id/btnLogin3"
+        android:id="@+id/btnCadastro"
         android:layout_width="205dp"
         android:layout_height="113dp"
         android:layout_marginStart="8dp"
@@ -17,6 +17,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/botao"
+        android:onClick="abreTelaCadastroUsuario"
         android:text="CADASTRO"
         android:textColor="@android:color/background_light"
         android:textSize="24sp"
@@ -51,7 +52,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@drawable/botao"
-        android:onClick="abreTela"
+        android:onClick="abreTelaLogin"
         android:text="LOGIN"
         android:textColor="@android:color/background_light"
         android:textSize="24sp"
