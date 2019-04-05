@@ -13,7 +13,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
-public class Conexao {
+public class  Conexao {
     public static Connection con = null;
 
 
