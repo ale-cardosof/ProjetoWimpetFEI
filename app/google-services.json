@@ -21,6 +21,14 @@
             "package_name": "com.example.alexandrecardoso.projetowimpetfei",
             "certificate_hash": "141a8fe79d0ec97cb2fbb4bdf8f5e804e664e354"
           }
+        },
+        {
+          "client_id": "251577602687-5tuavthfafl8npdrphncu216enjg3vlk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.alexandrecardoso.projetowimpetfei",
+            "certificate_hash": "bf9a10730cfb123e281973e5eb73c3fa1464db5e"
+          }
         }
       ],
       "api_key": [

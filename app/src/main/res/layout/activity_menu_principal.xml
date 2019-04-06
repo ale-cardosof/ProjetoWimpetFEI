@@ -7,7 +7,7 @@
     android:background="@drawable/bg2">
 
     <Button
-        android:id="@+id/btnCadastro"
+        android:id="@+id/btnUpload"
         android:layout_width="205dp"
         android:layout_height="113dp"
         android:layout_marginStart="8dp"
