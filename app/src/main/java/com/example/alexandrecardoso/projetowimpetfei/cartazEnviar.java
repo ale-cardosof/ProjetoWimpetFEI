@@ -1,7 +1,6 @@
 package com.example.alexandrecardoso.projetowimpetfei;
 
 import android.app.ProgressDialog;
-import android.app.VoiceInteractor;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -12,33 +11,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.Continuation;
-import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.OnPausedListener;
 import com.google.firebase.storage.OnProgressListener;
-import com.google.firebase.storage.StorageException;
-import com.google.firebase.storage.StorageMetadata;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-
-import com.example.alexandrecardoso.projetowimpetfei.Model.Usuario;
 
 import java.io.IOException;
 
@@ -56,7 +37,7 @@ public class cartazEnviar extends AppCompatActivity{
         setContentView(R.layout.activity_cartaz);
 
         btnEscImagem = findViewById(R.id.btnEscImagem);
-        btnUpload = findViewById(R.id.btnUpload);
+        btnUpload = findViewById(R.id.btnCadastro);
         imvImagem = findViewById(R.id.imvImagem);
         storageReference = FirebaseStorage.getInstance().getReference();
         btnEscImagem.setOnClickListener(new View.OnClickListener() {
@@ -124,7 +105,7 @@ public class cartazEnviar extends AppCompatActivity{
                     .addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>(){
                         public void onProgress(UploadTask.TaskSnapshot taskSnapshot){
                             double progress = (100 * taskSnapshot.getBytesTransferred())/taskSnapshot.getTotalByteCount();
-                            progressDialog.setMessage(((int) progress)+"% enviados...";
+                            progressDialog.setMessage(((int) progress)+"% enviados...");
                         }
                     });
         }

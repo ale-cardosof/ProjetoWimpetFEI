@@ -8,7 +8,7 @@
     tools:context=".cartazEnviar">
 
     <Button
-        android:id="@+id/btnUpload"
+        android:id="@+id/btnCadastro"
         android:layout_width="205dp"
         android:layout_height="113dp"
         android:layout_marginStart="8dp"
@@ -76,7 +76,7 @@
         android:textColor="@android:color/background_light"
         android:textSize="24sp"
         android:typeface="normal"
-        app:layout_constraintBottom_toTopOf="@+id/btnUpload"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"

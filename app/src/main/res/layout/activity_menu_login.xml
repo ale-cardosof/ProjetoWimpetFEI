@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg2"
+    android:background="@drawable/bgnew"
+    android:hapticFeedbackEnabled="true"
     tools:context=".menuLogin">
 
     <TextView
@@ -18,7 +19,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:text="ESQUECI A SENHA"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/background_light"
         android:textSize="12sp"
         android:textStyle="bold"
         app:fontFamily="@font/acme"
@@ -58,7 +59,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="SENHA"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/background_light"
         android:textSize="24sp"
         android:textStyle="bold"
         app:fontFamily="@font/acme"
@@ -108,7 +109,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:text="USUÁRIO"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/background_light"
         android:textSize="24sp"
         android:textStyle="bold"
         app:fontFamily="@font/acme"
