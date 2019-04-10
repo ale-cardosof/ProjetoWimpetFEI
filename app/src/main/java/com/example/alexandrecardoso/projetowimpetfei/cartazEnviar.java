@@ -37,7 +37,7 @@ public class cartazEnviar extends AppCompatActivity{
         setContentView(R.layout.activity_cartaz);
 
         btnEscImagem = findViewById(R.id.btnEscImagem);
-        btnUpload = findViewById(R.id.btnCadastro);
+        btnUpload = findViewById(R.id.btnUpload);
         imvImagem = findViewById(R.id.imvImagem);
         storageReference = FirebaseStorage.getInstance().getReference();
         btnEscImagem.setOnClickListener(new View.OnClickListener() {
@@ -82,9 +82,11 @@ public class cartazEnviar extends AppCompatActivity{
     }
 
     private void uploadImagem(){
+
         if (caminho != null){
             final ProgressDialog progressDialog = new ProgressDialog(this);
             progressDialog.setTitle("Enviando...");
+            progressDialog.show();
             StorageReference riversRef = storageReference.child("images/profile.jpg");
 
             riversRef.putFile(caminho)
@@ -92,14 +94,14 @@ public class cartazEnviar extends AppCompatActivity{
                         @Override
                         public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                             progressDialog.dismiss();
-                            Toast.makeText(getApplicationContext(),"Arquivo enviado com sucesso!", Toast.LENGTH_LONG);
+                            Toast.makeText(getApplicationContext(),"Arquivo enviado com sucesso!", Toast.LENGTH_LONG).show();
                         }
                     })
                     .addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@NonNull Exception exception) {
                             progressDialog.dismiss();
-                            Toast.makeText(getApplicationContext(),exception.getMessage(), Toast.LENGTH_LONG);
+                            Toast.makeText(getApplicationContext(),exception.getMessage(), Toast.LENGTH_LONG).show();
                         }
                     })
                     .addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>(){
