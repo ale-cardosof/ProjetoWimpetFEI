@@ -12,7 +12,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".menuBuscarAnimal"></activity>
-        <activity android:name=".menuOpcoes">
+        <activity android:name=".menuPrincipal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
