@@ -53,6 +53,11 @@ public class menuLogin extends AppCompatActivity {
 
 
     }
+
+    public  void geraToast(String texto){
+        Toast.makeText(getApplicationContext(),texto,
+                Toast.LENGTH_SHORT).show();
+    }
     public void login(View view){
         /* Buscando dados
         usuarios.addValueEventListener(new ValueEventListener() {
@@ -74,6 +79,9 @@ public class menuLogin extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     Log.i("signIn","Sucesso ao logar!");
+                    geraToast("Sucesso,usuário logado!");
+                    Intent it = new Intent(menuLogin.this, menuOpcoes.class);
+                    startActivity(it);
                 }
                 else
                     Log.i("signIn","Erro ao logar!");

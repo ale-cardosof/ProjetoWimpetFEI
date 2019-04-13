@@ -6,7 +6,10 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg2"
     tools:context=".menuOpcoes">
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    android:fillViewport="true">
     <Button
         android:id="@+id/btnListarAnimais"
         android:layout_width="223dp"
@@ -97,5 +100,5 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
-
+</ScrollView>
 </android.support.constraint.ConstraintLayout>

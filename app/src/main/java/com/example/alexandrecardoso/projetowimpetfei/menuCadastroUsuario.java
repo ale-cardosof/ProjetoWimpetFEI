@@ -60,7 +60,7 @@ public class menuCadastroUsuario extends AppCompatActivity {
                 Toast.LENGTH_SHORT).show();
     }
     public void criarUsuario(View view){
-        Usuario usuario = new Usuario();
+        final Usuario usuario = new Usuario();
         usuario.setNome(etNome.getText().toString());
         usuario.setEmail(etEmail.getText().toString());
         usuario.setTelefone(etTelefone.getText().toString());
@@ -69,8 +69,6 @@ public class menuCadastroUsuario extends AppCompatActivity {
         usuario.setCPF(etCPF.getText().toString());
         usuario.setLogin(etLogin.getText().toString());
         usuario.setPassword(etSenha.getText().toString());
-        //Insero o objeto usuario no banco.
-        usuarios.push().setValue(usuario);
         usuario_Cad.createUserWithEmailAndPassword(usuario.getEmail(),usuario.getPassword())
                 .addOnCompleteListener(menuCadastroUsuario.this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -78,6 +76,8 @@ public class menuCadastroUsuario extends AppCompatActivity {
                         if(task.isSuccessful()){
                             Log.i("CreateUser","Sucesso ao cadastrrar!");
                             geraToast("Sucesso,usuário cadastrado!");
+                            //Insero o objeto usuario no banco.
+                            usuarios.push().setValue(usuario);
                             limparTexto();
                         }
                         else
